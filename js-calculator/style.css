@@ -30,9 +30,8 @@ body {
     font-size: 80px;
     text-align: left;
     border: none;
-    /* background-color: #17181a; */
-    background-color: #76bed0;
-    color: white;
+    background-color: #17181a;
+    color: yellow;
 }
 
 .buttons {
