@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>js-calculator-matei</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style-grid-area.css" />
         <script defer src="./script.js" type="application/javascript"></script>
     </head>
     <body>
@@ -12,24 +13,23 @@
             <input id="screen" readonly />
             <!-- readonly screen of the calculator. input element with readonly -->
             <div class="buttons">
-                <button class="left" onclick="appendToScreen('+')">+</button>
-                <!-- onclick attribute of this button to be a JS function with the + character argument -->
-                <button onclick="appendToScreen('7')">7</button>
-                <button onclick="appendToScreen('8')">8</button>
-                <button onclick="appendToScreen('9')">9</button>
-                <button class="left" onclick="appendToScreen('-')">-</button>
-                <button onclick="appendToScreen('4')">4</button>
-                <button onclick="appendToScreen('5')">5</button>
-                <button onclick="appendToScreen('6')">6</button>
-                <button class="left" onclick="appendToScreen('*')">*</button>
-                <button onclick="appendToScreen('1')">1</button>
-                <button onclick="appendToScreen('2')">2</button>
-                <button onclick="appendToScreen('3')">3</button>
-                <button class="left" onclick="appendToScreen('/')">/</button>
-                <button onclick="appendToScreen('0')">0</button>
-                <button onclick="appendToScreen('.')">.</button>
-                <button onclick="calculate()">=</button>
-                <button onclick="clearScreen()">C</button>
+                <button class="matei-plus" id="left" onclick="appendToScreen('+')">+</button>
+                <button class="matei-7" onclick="appendToScreen('7')">7</button>
+                <button class="matei-8" onclick="appendToScreen('8')">8</button>
+                <button class="matei-9" onclick="appendToScreen('9')">9</button>
+                <button class="matei-minus" id="left" onclick="appendToScreen('-')">-</button>
+                <button class="matei-4" onclick="appendToScreen('4')">4</button>
+                <button class="matei-5" onclick="appendToScreen('5')">5</button>
+                <button class="matei-6" onclick="appendToScreen('6')">6</button>
+                <button class="matei-ori" id="left" onclick="appendToScreen('*')">*</button>
+                <button class="matei-1" onclick="appendToScreen('1')">1</button>
+                <button class="matei-2" onclick="appendToScreen('2')">2</button>
+                <button class="matei-3" onclick="appendToScreen('3')">3</button>
+                <button class="matei-slesh" id="left" onclick="appendToScreen('/')">/</button>
+                <button class="matei-0" onclick="appendToScreen('0')">0</button>
+                <button class="matei-punct" onclick="appendToScreen('.')">.</button>
+                <button class="matei-egal" onclick="calculate()">=</button>
+                <button class="matei-c" onclick="clearScreen()">C</button>
             </div>
         </div>
     </body>

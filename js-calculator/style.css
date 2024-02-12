@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 100vh;
 }
 
 .wrapper {
@@ -22,6 +22,12 @@ body {
     /* margin: 0 auto; */
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    grid-template-areas:
+        "matei-plus matei-7 matei-8 matei-9"
+        "matei-minus matei-4 matei-5 matei-6"
+        "matei-ori matei-1 matei-2 matei-3"
+        "matei-slesh matei-0 matei-punct matei-egal"
+        "matei-c matei-c matei-c matei-c";
 }
 
 #screen {
@@ -58,7 +64,7 @@ button {
     box-shadow: 0 0 15px rgba(156, 156, 156, 0.5);
 }
 
-.left {
+#left {
     background-color: #005db2;
 }
 
