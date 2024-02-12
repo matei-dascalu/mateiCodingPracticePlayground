@@ -22,12 +22,6 @@ body {
     /* margin: 0 auto; */
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    grid-template-areas:
-        "matei-plus matei-7 matei-8 matei-9"
-        "matei-minus matei-4 matei-5 matei-6"
-        "matei-ori matei-1 matei-2 matei-3"
-        "matei-slesh matei-0 matei-punct matei-egal"
-        "matei-c matei-c matei-c matei-c";
 }
 
 #screen {
@@ -42,11 +36,71 @@ body {
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     /* grid-template-rows: repeat(5, 4fr); */
     gap: 20px;
     padding: 25px;
     min-width: 320px;
+    grid-template-areas:
+        "matei-plus matei-7 matei-8 matei-9"
+        "matei-minus matei-4 matei-5 matei-6"
+        "matei-ori matei-1 matei-2 matei-3"
+        "matei-slesh matei-0 matei-punct matei-egal"
+        "matei-c matei-c matei-bun matei-bun";
+}
+
+.matei-plus {
+    grid-area: matei-plus;
+}
+.matei-7 {
+    grid-area: matei-7;
+}
+.matei-8 {
+    grid-area: matei-8;
+}
+.matei-9 {
+    grid-area: matei-9;
+}
+.matei-minus {
+    grid-area: matei-minus;
+}
+.matei-4 {
+    grid-area: matei-4;
+}
+.matei-5 {
+    grid-area: matei-5;
+}
+.matei-6 {
+    grid-area: matei-6;
+}
+.matei-ori {
+    grid-area: matei-ori;
+}
+.matei-1 {
+    grid-area: matei-1;
+}
+.matei-2 {
+    grid-area: matei-2;
+}
+.matei-3 {
+    grid-area: matei-3;
+}
+.matei-slesh {
+    grid-area: matei-slesh;
+}
+.matei-0 {
+    grid-area: matei-0;
+}
+.matei-punct {
+    grid-area: matei-punct;
+}
+.matei-egal {
+    grid-area: matei-egal;
+}
+.matei-c {
+    grid-area: matei-c;
+}
+.matei-bun {
+    grid-area: matei-bun;
 }
 
 button {
@@ -68,6 +122,15 @@ button {
     background-color: #005db2;
 }
 
+#left:hover {
+    background-color: rgba(0, 93, 178, 0.7);
+}
+
+.matei-c {
+    max-width: 300px;
+    border-radius: 15%;
+}
+
 button:hover {
     background-color: #606061;
 }
@@ -78,9 +141,12 @@ button:active {
 
 @media (min-width: 320px) and (max-width: 400px) {
     button {
-        max-width: 150px;
+        /* max-width: 150px; */
         height: 80px;
         border-radius: 15px;
-        font-size: 24px;
+        font-size: 34px;
+    }
+    .buttons {
+        padding: 10px 10px 25px 10px;
     }
 }
